@@ -8,7 +8,7 @@
     </value>
     <statement name="DO">
       <block type="controls_if" id="28" inline="false">
-        <mutation else="1"></mutation>
+        <mutation elseif="1" else="1"></mutation>
         <value name="IF0">
           <block type="logic_compare" id="50" inline="true">
             <field name="OP">LT</field>
@@ -27,40 +27,16 @@
         <statement name="DO0">
           <block type="movement_right" id="99"></block>
         </statement>
-        <statement name="ELSE">
-          <block type="controls_if" id="137" inline="false">
-            <mutation else="1"></mutation>
-            <value name="IF0">
-              <block type="logic_compare" id="138" inline="true">
-                <field name="OP">LT</field>
-                <value name="A">
-                  <block type="sensor_object" id="139">
-                    <field name="OBJECT">RIGHTFRONT</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="140">
-                    <field name="NUM">75</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="movement_left" id="153"></block>
-            </statement>
-            <statement name="ELSE">
-              <block type="movement_forward" id="142"></block>
-            </statement>
-            <next>
-              <block type="robot_delay" id="158" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="159">
-                    <field name="NUM">100</field>
-                  </block>
-                </value>
-              </block>
-            </next>
+        <value name="IF1">
+          <block type="sensor_object" id="139">
+            <field name="OBJECT">RIGHTFRONT</field>
           </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_left" id="153"></block>
+        </statement>
+        <statement name="ELSE">
+          <block type="movement_forward" id="142"></block>
         </statement>
       </block>
     </statement>
