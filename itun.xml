@@ -25,50 +25,10 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="led_select" id="169" inline="true">
-            <field name="ACTION">ON</field>
-            <value name="LED">
-              <block type="math_number" id="170">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-            <next>
-              <block type="led_select" id="179" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="180">
-                    <field name="NUM">2</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_right" id="99"></block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_right" id="99"></block>
         </statement>
         <statement name="ELSE">
-          <block type="led_select" id="189" inline="true">
-            <field name="ACTION">ON</field>
-            <value name="LED">
-              <block type="math_number" id="190">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-            <next>
-              <block type="led_select" id="200" inline="true">
-                <field name="ACTION">ON</field>
-                <value name="LED">
-                  <block type="math_number" id="191">
-                    <field name="NUM">5</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_forward" id="132"></block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_forward" id="132"></block>
         </statement>
         <next>
           <block type="robot_delay" id="156" inline="true">
@@ -96,50 +56,10 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="led_select" id="201" inline="true">
-                    <field name="ACTION">ON</field>
-                    <value name="LED">
-                      <block type="math_number" id="202">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="led_select" id="203" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="math_number" id="204">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_left" id="153"></block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
+                  <block type="movement_left" id="153"></block>
                 </statement>
                 <statement name="ELSE">
-                  <block type="led_select" id="205" inline="true">
-                    <field name="ACTION">ON</field>
-                    <value name="LED">
-                      <block type="math_number" id="206">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="led_select" id="207" inline="true">
-                        <field name="ACTION">ON</field>
-                        <value name="LED">
-                          <block type="math_number" id="208">
-                            <field name="NUM">1</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_forward" id="142"></block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
+                  <block type="movement_forward" id="142"></block>
                 </statement>
                 <next>
                   <block type="robot_delay" id="158" inline="true">
